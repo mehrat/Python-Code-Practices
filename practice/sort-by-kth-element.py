@@ -14,9 +14,9 @@ k = int(sys.stdin.readline())
 
 def sort_by_kth_element(master_list, k):
     for r in sorted(master_list, key=lambda x:x[k]):
-        for i in r[:-1]:
+        for i in r:
             print i,
-    print r[-1]
+            print ''
 
 
 sort_by_kth_element(master_list, k)
